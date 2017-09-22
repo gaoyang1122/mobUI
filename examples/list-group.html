@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="docs.min.css" crossorigin="anonymous">
+  <script src="holder.js"></script>
+  <style>
+    .bd-pageheader{
+      color: #f5f5f5;
+      background-color: #13c2a1;
+    }
+  </style>
+<link href="../css/main-69e3aeb6.css" rel="stylesheet"><link href="../css/scss/bootstrap-64b0dbba.css" rel="stylesheet"></head>
+<body>
+<div class="bd-pageheader">
+  <div class="container">
+
+    <h1><font><font>云数据产品-UI设计规范</font></font></h1>
+    <p class="lead"><font><font>
+      适用人员：小虫，小梦，高炀，团子| </font><font>开发维护人员高炀，小虫
+    </font></font></p>
+
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-3 push-md-9 bd-sidebar">
+      <ul class="nav navbar">
+        <li><a href="alerts.html"><font><font>警报警告</font></font></a></li>
+        <li><a href="badge.html"><font><font>徽章标签</font></font></a></li>
+        <li><a href="breadcrumb.html"><font><font>面包屑面包屑</font></font></a></li>
+        <li><a href="buttons.html"><font><font>纽扣</font></font></a></li>
+        <li><a href="button-group.html"><font><font>按钮组</font></font></a></li>
+        <li><a href="card.html"><font><font>卡</font></font></a></li>
+        <li><a href="carousel.html"><font><font>圆盘传送带</font></font></a></li>
+        <li><a href="collapse.html"><font><font>折叠折叠面板</font></font></a></li>
+        <li><a href="dropdowns.html"><font><font>下拉菜单</font></font></a></li>
+        <li><a href="forms.html"><font><font>形式</font></font></a></li>
+        <li><a href="input-group.html"><font><font>输入组</font></font></a></li>
+        <li><a href="jumbotron.html"><font><font>超大屏幕</font></font></a></li>
+        <li><a href="list-group.html"><font><font>列表组</font></font></a></li>
+        <li><a href="modal.html"><font><font>语气</font></font></a></li>
+        <li><a href="navs.html"><font><font>资产净值</font></font></a></li>
+        <li><a href="navbar.html"><font><font>导航栏</font></font></a></li>
+        <li><a href="pagination.html"><font><font>分页分页</font></font></a></li>
+        <li><a href="popovers.html"><font><font>约夏克布丁</font></font></a></li>
+        <li><a href="progress.html"><font><font>进度条</font></font></a></li>
+        <li><a href="scrollspy.html"><font><font>Scrollspy</font></font></a></li>
+        <li><a href="tooltips.html"><font><font>工具提示文字提示</font></font></a></li>
+        <li><a href="table.html"><font><font>表表格</font></font></a></li>
+
+      </ul>
+    </div>
+    <div class="col-12 col-md-9 pull-md-3 bd-content">
+
+      <h1 class="bd-title" id="content"><font><font>列表组</font></font></h1>
+      <p><font><font>列表组是显示一系列内容的灵活而强大的组件。</font><font>列表组项目可以修改和扩展，以支持其内的任何内容。</font><font>它们也可以用作具有正确修饰符类的导航。</font></font></p>
+
+      <h2 id="contents"><font><font>内容</font></font></h2>
+
+      <ul id="markdown-toc">
+        <li><a href="#contents" id="markdown-toc-contents"><font><font>内容</font></font></a></li>
+        <li><a href="#basic-example" id="markdown-toc-basic-example"><font><font>基本例子</font></font></a></li>
+        <li><a href="#active-items" id="markdown-toc-active-items"><font><font>活动项目</font></font></a></li>
+        <li><a href="#disabled-items" id="markdown-toc-disabled-items"><font><font>残疾人物品</font></font></a></li>
+        <li><a href="#links-and-buttons" id="markdown-toc-links-and-buttons"><font><font>链接和按钮</font></font></a></li>
+        <li><a href="#contextual-classes" id="markdown-toc-contextual-classes"><font><font>语境类</font></font></a></li>
+        <li><a href="#with-badges" id="markdown-toc-with-badges"><font><font>带徽章</font></font></a></li>
+        <li><a href="#custom-content" id="markdown-toc-custom-content"><font><font>自定义内容</font></font></a></li>
+      </ul>
+      <h2 id="basic-example"><font><font>基本例子</font></font></h2>
+      <p><font><font>最基本的列表组是具有列表项和适当类的无序列表。</font><font>使用随后的选项，或根据需要使用自己的CSS。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <ul class="list-group">
+          <li class="list-group-item"><font><font>Cras justo odio</font></font></li>
+          <li class="list-group-item"><font><font>大蟾蜍</font></font></li>
+          <li class="list-group-item"><font><font>莫比利奥里斯</font></font></li>
+          <li class="list-group-item"><font><font>Porta ac consectetur ac</font></font></li>
+          <li class="list-group-item"><font><font>前庭糜烂</font></font></li>
+        </ul>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+      <h2 id="active-items"><font><font>活动项目</font></font></h2>
+
+      <p><font><font>添加</font></font><code class="highlighter-rouge">.active</code><font><font>到一个</font></font><code class="highlighter-rouge">.list-group-item</code><font><font>以指示当前活动选择。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <ul class="list-group">
+          <li class="list-group-item active"><font><font>Cras justo odio</font></font></li>
+          <li class="list-group-item"><font><font>大蟾蜍</font></font></li>
+          <li class="list-group-item"><font><font>莫比利奥里斯</font></font></li>
+          <li class="list-group-item"><font><font>Porta ac consectetur ac</font></font></li>
+          <li class="list-group-item"><font><font>前庭糜烂</font></font></li>
+        </ul>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item active"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+      <h2 id="disabled-items"><font><font>残疾人物品</font></font></h2>
+
+      <p><font><font>添加</font></font><code class="highlighter-rouge">.disabled</code><font><font>到a </font></font><code class="highlighter-rouge">.list-group-item</code><font><font>使其</font></font><em><font><font>显示</font></font></em><font><font>禁用。</font><font>请注意，某些元素</font></font><code class="highlighter-rouge">.disabled</code><font><font>还需要自定义JavaScript才能完全禁用其点击事件（例如链接）。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <ul class="list-group">
+          <li class="list-group-item disabled"><font><font>Cras justo odio</font></font></li>
+          <li class="list-group-item"><font><font>大蟾蜍</font></font></li>
+          <li class="list-group-item"><font><font>莫比利奥里斯</font></font></li>
+          <li class="list-group-item"><font><font>Porta ac consectetur ac</font></font></li>
+          <li class="list-group-item"><font><font>前庭糜烂</font></font></li>
+        </ul>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item disabled"</span><span class="nt">&gt;</span>Cras justo odio<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+      <h2 id="links-and-buttons"><font><font>链接和按钮</font></font></h2>
+
+      <p><font><font>使用</font></font><code class="highlighter-rouge">&lt;a&gt;</code><font><font>s或</font></font><code class="highlighter-rouge">&lt;button&gt;</code><font><font>s </font><font>通过添加</font><font>来创建</font><font>具有悬停，禁用和活动状态的</font></font><em><font><font>可操作的</font></font></em><font><font>列表组项目</font></font><code class="highlighter-rouge">.list-group-item-action</code><font><font>。</font><font>我们分离这些伪类，以确保由非交互元素（如</font></font><code class="highlighter-rouge">&lt;li&gt;</code><font><font>s或</font></font><code class="highlighter-rouge">&lt;div&gt;</code><font><font>s）</font><font>组成的列表组</font><font>不提供点击或点击支持。</font></font></p>
+
+      <p><font><font>请务必在</font><strong><font>这里</font></strong></font><strong><font><font>不要使用标准</font></font><code class="highlighter-rouge">.btn</code><font><font>课程</font></font></strong><font><font>。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <div class="list-group">
+          <a href="#" class="list-group-item active"><font><font>
+            Cras justo odio
+          </font></font></a>
+          <a href="#" class="list-group-item list-group-item-action"><font><font>Dapibus ac facilisis in Morbi </font></font></a>
+          <a href="#" class="list-group-item list-group-item-action"><font><font>leo </font></font></a>
+          <font><a href="#" class="list-group-item list-group-item-action"><font>risus </font></a></font><a href="#" class="list-group-item list-group-item-action"><font><font>Porta ac </font></font></a>
+          <font><a href="#" class="list-group-item list-group-item-action"><font>consectetur ac Vestibulum </font></a></font><a href="#" class="list-group-item list-group-item-action disabled"><font><font>at eros</font></font></a>
+        </div>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item active"</span><span class="nt">&gt;</span><font></font>
+    Cras justo odio<font></font>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action"</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action disabled"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+      <p><font><font>使用</font></font><code class="highlighter-rouge">&lt;button&gt;</code><font><font>s，您还可以使用</font></font><code class="highlighter-rouge">disabled</code><font><font>属性而不是</font></font><code class="highlighter-rouge">.disabled</code><font><font>类。</font><font>不幸的是，</font></font><code class="highlighter-rouge">&lt;a&gt;</code><font><font>s不支持disabled属性。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <div class="list-group">
+          <button type="button" class="list-group-item list-group-item-action active"><font><font>
+            Cras justo odio
+          </font></font></button>
+          <button type="button" class="list-group-item list-group-item-action"><font><font>大蟾蜍</font></font></button>
+          <button type="button" class="list-group-item list-group-item-action"><font><font>莫比利奥里斯</font></font></button>
+          <button type="button" class="list-group-item list-group-item-action"><font><font>Porta ac consectetur ac</font></font></button>
+          <button type="button" class="list-group-item list-group-item-action" disabled=""><font><font>前庭糜烂</font></font></button>
+        </div>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action active"</span><span class="nt">&gt;</span><font></font>
+    Cras justo odio<font></font>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action"</span><span class="nt">&gt;</span>Morbi leo risus<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+      <h2 id="contextual-classes"><font><font>语境类</font></font></h2>
+
+      <p><font><font>使用上下文类来设计具有状态背景和颜色的列表项。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <ul class="list-group">
+          <li class="list-group-item"><font><font>大蟾蜍</font></font></li>
+          <li class="list-group-item list-group-item-success"><font><font>大蟾蜍</font></font></li>
+          <li class="list-group-item list-group-item-info"><font><font>Cras坐在amet nibh libero</font></font></li>
+          <li class="list-group-item list-group-item-warning"><font><font>Porta ac consectetur ac</font></font></li>
+          <li class="list-group-item list-group-item-danger"><font><font>前庭糜烂</font></font></li>
+        </ul>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-success"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-info"</span><span class="nt">&gt;</span>Cras sit amet nibh libero<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-warning"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-danger"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+      <p><font><font>语境类也可以使用</font></font><code class="highlighter-rouge">.list-group-item-action</code><font><font>。</font><font>请注意，在上面的示例中，不存在悬停样式。</font><font>还支持的是</font></font><code class="highlighter-rouge">.active</code><font><font>国家; </font><font>应用它来指示在上下文列表组项目上的活动选择。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action"><font><font>在Dapibus交流facilisis </font></font></a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-success"><font><font>Dapibus交流facilisis在</font></font></a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-info"><font><font>评级机构坐阿梅德NIBH自由人</font></font></a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-warning"><font><font>门交流consectetur交流</font></font></a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-danger"><font><font>前庭的性爱</font></font></a>
+        </div>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action list-group-item-success"</span><span class="nt">&gt;</span>Dapibus ac facilisis in<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action list-group-item-info"</span><span class="nt">&gt;</span>Cras sit amet nibh libero<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action list-group-item-warning"</span><span class="nt">&gt;</span>Porta ac consectetur ac<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action list-group-item-danger"</span><span class="nt">&gt;</span>Vestibulum at eros<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+      <div class="bd-callout bd-callout-warning">
+        <h4 id="conveying-meaning-to-assistive-technologies"><font><font>传达辅助技术的意义</font></font></h4>
+
+        <p><font><font>使用颜色添加意义只提供一个视觉指示，这不会传达给辅助技术的用户，如屏幕阅读器。</font><font>确保由颜色表示的信息从内容本身（例如可见文本）中显而易见，或者通过替代方法包括，例如隐藏在</font></font><code class="highlighter-rouge">.sr-only</code><font><font>该类中的</font><font>附加文本</font><font>。</font></font></p>
+      </div>
+
+      <h2 id="with-badges"><font><font>带徽章</font></font></h2>
+
+      <p><font><font>在某些实用程序的帮助下，向任何列表组项添加徽章以显示未读计数，活动等。</font><font>注意</font></font><a href="/layout/grid/#horizontal-alignment"><code class="highlighter-rouge">justify-content-between</code><font><font>效用类</font></font></a><font><font>和徽章的位置。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <ul class="list-group">
+          <li class="list-group-item justify-content-between"><font><font>
+            Cras justo odio
+          </font></font><span class="badge badge-default badge-pill"><font><font>14</font></font></span>
+          </li>
+          <li class="list-group-item justify-content-between"><font><font>
+            大蟾蜍在
+          </font></font><span class="badge badge-default badge-pill"><font><font>2</font></font></span>
+          </li>
+          <li class="list-group-item justify-content-between"><font><font>
+            莫比利奥人
+          </font></font><span class="badge badge-default badge-pill"><font><font>1</font></font></span>
+          </li>
+        </ul>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item justify-content-between"</span><span class="nt">&gt;</span><font></font>
+    Cras justo odio<font></font>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-default badge-pill"</span><span class="nt">&gt;</span>14<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item justify-content-between"</span><span class="nt">&gt;</span><font></font>
+    Dapibus ac facilisis in<font></font>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-default badge-pill"</span><span class="nt">&gt;</span>2<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"list-group-item justify-content-between"</span><span class="nt">&gt;</span><font></font>
+    Morbi leo risus<font></font>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge badge-default badge-pill"</span><span class="nt">&gt;</span>1<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+      <h2 id="custom-content"><font><font>自定义内容</font></font></h2>
+
+      <p><font><font>在</font></font><a href="/utilities/flexbox/"><font><font>flexbox实用程序</font></font></a><font><font>的帮助下，添加几乎任何HTML，即使对于下面的链接列表组也是</font><a href="/utilities/flexbox/"><font>如此</font></a><font>。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1"><font><font>列出组项目标题</font></font></h5>
+              <small><font><font>3天前</font></font></small>
+            </div>
+            <p class="mb-1"><font><font>Donec id elit non mi porta gravida at eget metus。</font><font>Maecenas sed diam eget risus varius blandit。</font></font></p>
+            <small><font><font>Donec id elit non mi porta。</font></font></small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1"><font><font>列出组项目标题</font></font></h5>
+              <small class="text-muted"><font><font>3天前</font></font></small>
+            </div>
+            <p class="mb-1"><font><font>Donec id elit non mi porta gravida at eget metus。</font><font>Maecenas sed diam eget risus varius blandit。</font></font></p>
+            <small class="text-muted"><font><font>Donec id elit non mi porta。</font></font></small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1"><font><font>列出组项目标题</font></font></h5>
+              <small class="text-muted"><font><font>3天前</font></font></small>
+            </div>
+            <p class="mb-1"><font><font>Donec id elit non mi porta gravida at eget metus。</font><font>Maecenas sed diam eget risus varius blandit。</font></font></p>
+            <small class="text-muted"><font><font>Donec id elit non mi porta。</font></font></small>
+          </a>
+        </div>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"list-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action flex-column align-items-start active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex w-100 justify-content-between"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;small&gt;</span>3 days ago<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;small&gt;</span>Donec id elit non mi porta.<span class="nt">&lt;/small&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action flex-column align-items-start"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex w-100 justify-content-between"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>3 days ago<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Donec id elit non mi porta.<span class="nt">&lt;/small&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"list-group-item list-group-item-action flex-column align-items-start"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"d-flex w-100 justify-content-between"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>List group item heading<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>3 days ago<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"mb-1"</span><span class="nt">&gt;</span>Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Donec id elit non mi porta.<span class="nt">&lt;/small&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+
+
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/vendors-72e105c3.js"></script><script type="text/javascript" src="../js/main-69e3aeb6.js"></script><script type="text/javascript" src="../js/indexHtml-5ffd131e.js"></script><script type="text/javascript" src="../js/scss/bootstrap-64b0dbba.js"></script></body></html>

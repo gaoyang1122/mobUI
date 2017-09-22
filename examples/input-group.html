@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="docs.min.css" crossorigin="anonymous">
+  <script src="holder.js"></script>
+  <style>
+    .bd-pageheader{
+      color: #f5f5f5;
+      background-color: #13c2a1;
+    }
+  </style>
+<link href="../css/main-69e3aeb6.css" rel="stylesheet"><link href="../css/scss/bootstrap-64b0dbba.css" rel="stylesheet"></head>
+<body>
+<div class="bd-pageheader">
+  <div class="container">
+
+    <h1><font><font>云数据产品-UI设计规范</font></font></h1>
+    <p class="lead"><font><font>
+      适用人员：小虫，小梦，高炀，团子| </font><font>开发维护人员高炀，小虫
+    </font></font></p>
+
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-3 push-md-9 bd-sidebar">
+      <ul class="nav navbar">
+        <li><a href="alerts.html"><font><font>警报警告</font></font></a></li>
+        <li><a href="badge.html"><font><font>徽章标签</font></font></a></li>
+        <li><a href="breadcrumb.html"><font><font>面包屑面包屑</font></font></a></li>
+        <li><a href="buttons.html"><font><font>纽扣</font></font></a></li>
+        <li><a href="button-group.html"><font><font>按钮组</font></font></a></li>
+        <li><a href="card.html"><font><font>卡</font></font></a></li>
+        <li><a href="carousel.html"><font><font>圆盘传送带</font></font></a></li>
+        <li><a href="collapse.html"><font><font>折叠折叠面板</font></font></a></li>
+        <li><a href="dropdowns.html"><font><font>下拉菜单</font></font></a></li>
+        <li><a href="forms.html"><font><font>形式</font></font></a></li>
+        <li><a href="input-group.html"><font><font>输入组</font></font></a></li>
+        <li><a href="jumbotron.html"><font><font>超大屏幕</font></font></a></li>
+        <li><a href="list-group.html"><font><font>列表组</font></font></a></li>
+        <li><a href="modal.html"><font><font>语气</font></font></a></li>
+        <li><a href="navs.html"><font><font>资产净值</font></font></a></li>
+        <li><a href="navbar.html"><font><font>导航栏</font></font></a></li>
+        <li><a href="pagination.html"><font><font>分页分页</font></font></a></li>
+        <li><a href="popovers.html"><font><font>约夏克布丁</font></font></a></li>
+        <li><a href="progress.html"><font><font>进度条</font></font></a></li>
+        <li><a href="scrollspy.html"><font><font>Scrollspy</font></font></a></li>
+        <li><a href="tooltips.html"><font><font>工具提示文字提示</font></font></a></li>
+        <li><a href="table.html"><font><font>表表格</font></font></a></li>
+
+      </ul>
+    </div>
+    <div class="col-12 col-md-9 pull-md-3 bd-content">
+
+      <h1 class="bd-title" id="content"><font><font>输入组</font></font></h1>
+      <p><font><font>通过在文本</font></font><code class="highlighter-rouge">&lt;input&gt;</code><font><font>的</font><font>两边添加文本，按钮或按钮组，轻松扩展表单控件</font><font>。</font></font></p>
+
+      <h2 id="contents"><font><font>内容</font></font></h2>
+
+      <ul id="markdown-toc">
+        <li><a href="#contents" id="markdown-toc-contents"><font><font>内容</font></font></a></li>
+        <li><a href="#basic-example" id="markdown-toc-basic-example"><font><font>基本例子</font></font></a></li>
+        <li><a href="#sizing" id="markdown-toc-sizing"><font><font>浆纱</font></font></a></li>
+        <li><a href="#checkboxes-and-radio-addons" id="markdown-toc-checkboxes-and-radio-addons"><font><font>复选框和收音机插件</font></font></a></li>
+        <li><a href="#multiple-addons" id="markdown-toc-multiple-addons"><font><font>多个插件</font></font></a></li>
+        <li><a href="#button-addons" id="markdown-toc-button-addons"><font><font>按钮插件</font></font></a></li>
+        <li><a href="#buttons-with-dropdowns" id="markdown-toc-buttons-with-dropdowns"><font><font>具有下拉列表的按钮</font></font></a></li>
+        <li><a href="#segmented-buttons" id="markdown-toc-segmented-buttons"><font><font>分段按钮</font></font></a></li>
+        <li><a href="#accessibility" id="markdown-toc-accessibility"><font><font>无障碍</font></font></a></li>
+      </ul>
+      <h2 id="basic-example"><font><font>基本例子</font></font></h2>
+
+      <p><font><font>在输入的任一侧放置一个附加组件或按钮。</font><font>您也可以在输入的两面放置一个。</font></font><strong><font><font>我们不支持单个输入组中的多个表单控件。</font></font></strong></p>
+
+      <div class="bd-example" data-example-id="">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"><font><font>@</font></font></span>
+          <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+        </div>
+        <br><div class="input-group">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2"><span class="input-group-addon" id="basic-addon2"><font><font>@ example.com</font></font></span>
+      </div>
+        <br><label for="basic-url"><font><font>你的虚荣网址</font></font></label>
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon3"><font><font>https://example.com/users/</font></font></span>
+          <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+        </div>
+        <br><div class="input-group">
+        <span class="input-group-addon"><font><font>$</font></font></span>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"><span class="input-group-addon"><font><font>.00</font></font></span>
+      </div>
+        <br><div class="input-group">
+        <span class="input-group-addon"><font><font>$ </font></font></span>
+        <span class="input-group-addon"><font><font>0.00</font></font></span>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+      </div>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span> <span class="na">id=</span><span class="s">"basic-addon1"</span><span class="nt">&gt;</span>@<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Username"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon1"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Recipient's username"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon2"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span> <span class="na">id=</span><span class="s">"basic-addon2"</span><span class="nt">&gt;</span>@example.com<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"basic-url"</span><span class="nt">&gt;</span>Your vanity URL<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span> <span class="na">id=</span><span class="s">"basic-addon3"</span><span class="nt">&gt;</span>https://example.com/users/<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"basic-url"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon3"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Amount (to the nearest dollar)"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>.00<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>0.00<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Amount (to the nearest dollar)"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+      <h2 id="sizing"><font><font>浆纱</font></font></h2>
+
+      <p><font><font>将相对表单大小类添加到</font></font><code class="highlighter-rouge">.input-group</code><font><font>自身中，内容中的内容将自动调整大小 - 不需要在每个元素上重复表单控件大小类。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon" id="sizing-addon1"><font><font>@</font></font></span>
+          <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon1">
+        </div>
+        <br><div class="input-group">
+        <span class="input-group-addon" id="sizing-addon2"><font><font>@</font></font></span>
+        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+      </div>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-group-lg"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span> <span class="na">id=</span><span class="s">"sizing-addon1"</span><span class="nt">&gt;</span>@<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Username"</span> <span class="na">aria-describedby=</span><span class="s">"sizing-addon1"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span> <span class="na">id=</span><span class="s">"sizing-addon2"</span><span class="nt">&gt;</span>@<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Username"</span> <span class="na">aria-describedby=</span><span class="s">"sizing-addon2"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+      <h2 id="checkboxes-and-radio-addons"><font><font>复选框和收音机插件</font></font></h2>
+
+      <p><font><font>在输入组的插件中放置任何复选框或收音机选项，而不是文本。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="Checkbox for following text input"></span>
+              <input type="text" class="form-control" aria-label="Text input with checkbox">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio" aria-label="Radio button for following text input"></span>
+              <input type="text" class="form-control" aria-label="Text input with radio button">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">aria-label=</span><span class="s">"Checkbox for following text input"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Text input with checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">aria-label=</span><span class="s">"Radio button for following text input"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Text input with radio button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+      <h2 id="multiple-addons"><font><font>多个插件</font></font></h2>
+
+      <p><font><font>支持多个附件，可以与复选框和无线电输入版本混合使用。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="Checkbox for following text input"></span>
+              <span class="input-group-addon"><font><font>$</font></font></span>
+              <input type="text" class="form-control" aria-label="Text input with checkbox">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="input-group">
+              <span class="input-group-addon"><font><font>$ </font></font></span>
+              <span class="input-group-addon"><font><font>0.00</font></font></span>
+              <input type="text" class="form-control" aria-label="Text input with radio button">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">aria-label=</span><span class="s">"Checkbox for following text input"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Text input with checkbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>0.00<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Text input with radio button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+      <h2 id="button-addons"><font><font>按钮插件</font></font></h2>
+
+      <p><font><font>输入组中的按钮必须包装在</font></font><code class="highlighter-rouge">.input-group-btn</code><font><font>适当的对齐和尺寸上。</font><font>这是必需的，因为默认的浏览器样式不能被覆盖。</font></font></p>
+
+      <div class="bd-example" data-example-id="">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-secondary" type="button"><font><font>走！</font></font></button>
+      </span>
+              <input type="text" class="form-control" placeholder="Search for...">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search for..."><span class="input-group-btn">
+        <button class="btn btn-secondary" type="button"><font><font>走！</font></font></button>
+      </span>
+            </div>
+          </div>
+        </div>
+        <br><div class="row">
+        <div class="col-lg-offset-3 col-lg-6">
+          <div class="input-group">
+      <span class="input-group-btn">
+        <button class="btn btn-secondary" type="button"><font><font>讨厌它</font></font></button>
+      </span>
+            <input type="text" class="form-control" placeholder="Product name"><span class="input-group-btn">
+        <button class="btn btn-secondary" type="button"><font><font>爱它</font></font></button>
+      </span>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Go!<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Search for..."</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Search for..."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Go!<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;br&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-offset-3 col-lg-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Hate it<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Product name"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>Love it<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+      <h2 id="buttons-with-dropdowns"><font><font>具有下拉列表的按钮</font></font></h2>
+
+      <div class="bd-example" data-example-id="">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><font><font>
+                  行动
+                </font></font></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><font><font>行动</font></font></a>
+                  <a class="dropdown-item" href="#"><font><font>的另一个动作</font></font></a>
+                  <a class="dropdown-item" href="#"><font><font>别的东西在这里</font></font></a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"><font><font>分离的链接</font></font></a>
+                </div>
+              </div>
+              <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input type="text" class="form-control" aria-label="Text input with dropdown button"><div class="input-group-btn">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><font><font>
+                行动
+              </font></font></button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#"><font><font>行动</font></font></a>
+                <a class="dropdown-item" href="#"><font><font>的另一个动作</font></font></a>
+                <a class="dropdown-item" href="#"><font><font>别的东西在这里</font></font></a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"><font><font>分离的链接</font></font></a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span><font></font>
+          Action<font></font>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Text input with dropdown button"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Text input with dropdown button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span><font></font>
+          Action<font></font>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-right"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+      <h2 id="segmented-buttons"><font><font>分段按钮</font></font></h2>
+
+      <div class="bd-example" data-example-id="">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-secondary"><font><font>行动</font></font></button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only"><font><font>切换下拉菜单</font></font></span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><font><font>行动</font></font></a>
+                  <a class="dropdown-item" href="#"><font><font>的另一个动作</font></font></a>
+                  <a class="dropdown-item" href="#"><font><font>别的东西在这里</font></font></a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"><font><font>分离的链接</font></font></a>
+                </div>
+              </div>
+              <input type="text" class="form-control" aria-label="Text input with segmented button dropdown">
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="input-group">
+              <input type="text" class="form-control" aria-label="Text input with segmented button dropdown"><div class="input-group-btn">
+              <button type="button" class="btn btn-secondary"><font><font>行动</font></font></button>
+              <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only"><font><font>切换下拉菜单</font></font></span>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#"><font><font>行动</font></font></a>
+                <a class="dropdown-item" href="#"><font><font>的另一个动作</font></font></a>
+                <a class="dropdown-item" href="#"><font><font>别的东西在这里</font></font></a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"><font><font>分离的链接</font></font></a>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle dropdown-toggle-split"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Text input with segmented button dropdown"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-lg-6"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Text input with segmented button dropdown"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-btn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle dropdown-toggle-split"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-right"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"separator"</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+      <h2 id="accessibility"><font><font>无障碍</font></font></h2>
+
+      <p><font><font>如果您没有为每个输入添加标签，屏幕阅读器将无法使用表单。</font><font>对于这些输入组，请确保向辅助技术传达任何附加的标签或功能。</font></font></p>
+
+      <p><font><font>要使用的确切技术（</font></font><code class="highlighter-rouge">&lt;label&gt;</code><font><font>元素使用隐藏</font></font><code class="highlighter-rouge">.sr-only</code><font><font>类，或者使用的</font></font><code class="highlighter-rouge">aria-label</code><font><font>，</font></font><code class="highlighter-rouge">aria-labelledby</code><font><font>，</font></font><code class="highlighter-rouge">aria-describedby</code><font><font>，</font></font><code class="highlighter-rouge">title</code><font><font>或</font></font><code class="highlighter-rouge">placeholder</code><font><font>属性）和哪些附加信息需要传达将取决于你实现接口小窗口的确切类型而有所不同。</font><font>本节中的示例提供了一些建议的具体案例。</font></font></p>
+
+
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/vendors-72e105c3.js"></script><script type="text/javascript" src="../js/main-69e3aeb6.js"></script><script type="text/javascript" src="../js/indexHtml-5ffd131e.js"></script><script type="text/javascript" src="../js/scss/bootstrap-64b0dbba.js"></script></body></html>

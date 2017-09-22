@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="docs.min.css" crossorigin="anonymous">
+    <script src="holder.js"></script>
+    <style>
+		.bd-pageheader{
+			color: #f5f5f5;
+			background-color: #13c2a1;
+		}
+    </style>
+<link href="../css/main-69e3aeb6.css" rel="stylesheet"><link href="../css/scss/bootstrap-64b0dbba.css" rel="stylesheet"></head>
+<body>
+<div class="bd-pageheader">
+	<div class="container">
+
+  		<h1>云数据产品-UI设计规范</h1>
+		<p class="lead">
+		    适用人员：小虫，小梦，高炀，团子 | 开发维护人员 高炀，小虫
+		</p>
+      
+      </div>
+    </div>
+<div class="container">
+	<div class="row">
+		<div class="col-12 col-md-3 push-md-9 bd-sidebar">
+			<ul class="nav navbar">
+				<li><a href="alerts.html">Alerts 警告</a></li>
+<li><a href="badge.html">Badge 标签</a></li>
+<li><a href="breadcrumb.html">Breadcrumb 面包屑</a></li>
+<li><a href="buttons.html">Buttons</a></li>
+<li><a href="button-group.html">Button-group</a></li>
+<li><a href="card.html">Card</a></li>
+<li><a href="carousel.html">Carousel</a></li>
+<li><a href="collapse.html">Collapse 折叠面板</a></li>
+<li><a href="dropdowns.html">Dropdowns</a></li>
+<li><a href="forms.html">Forms</a></li>
+<li><a href="input-group.html">Input-group</a></li>
+<li><a href="jumbotron.html">Jumbotron</a></li>
+<li><a href="list-group.html">List-group</a></li>
+<li><a href="modal.html">Modal</a></li>
+<li><a href="navs.html">Navs</a></li>
+<li><a href="navbar.html">Navbar</a></li>
+<li><a href="pagination.html">Pagination 分页</a></li>
+<li><a href="popovers.html">Popovers</a></li>
+<li><a href="progress.html">Progress 进度条</a></li>
+<li><a href="scrollspy.html">Scrollspy</a></li>
+<li><a href="tooltips.html">Tooltips 文字提示</a></li>
+<li><a href="table.html">Table 表格</a></li>
+
+			</ul>
+		</div>
+		<div class="col-12 col-md-9 pull-md-3 bd-content">
+			
+          <h1 class="bd-title" id="content">Breadcrumb</h1>
+          <p>Indicate the current page’s location within a navigational hierarchy. Separators are automatically added in CSS through <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before"><code class="highlighter-rouge">::before</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content"><code class="highlighter-rouge">content</code></a>.</p>
+
+<div class="bd-example" data-example-id="">
+<ol class="breadcrumb">
+<li class="breadcrumb-item active">Home</li>
+</ol>
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">Home</a></li>
+  <li class="breadcrumb-item active">Library</li>
+</ol>
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">Home</a></li>
+  <li class="breadcrumb-item"><a href="#">Library</a></li>
+  <li class="breadcrumb-item active">Data</li>
+</ol>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span></code></pre></div>
+
+<p>Similar to our navigation components, breadcrumbs work fine with or without the usage of list markup.</p>
+
+<div class="bd-example" data-example-id="">
+<nav class="breadcrumb"><a class="breadcrumb-item" href="#">Home</a>
+  <a class="breadcrumb-item" href="#">Library</a>
+  <a class="breadcrumb-item" href="#">Data</a>
+  <span class="breadcrumb-item active">Bootstrap</span>
+</nav>
+
+<nav class="breadcrumb breadcrumb-special"><a class="breadcrumb-item" href="#">Home</a>
+  <a class="breadcrumb-item" href="#">媒介计划</a>
+  <a class="breadcrumb-item" href="#">面包屑标题</a>
+  <span class="breadcrumb-item active">当前页面标题</span>
+</nav>
+
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre>
+<pre><code class="language-html" data-lang="html"><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"breadcrumb  breadcrumb-special"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre>
+
+</div>
+
+
+
+
+        
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="../dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/vendors-72e105c3.js"></script><script type="text/javascript" src="../js/main-69e3aeb6.js"></script><script type="text/javascript" src="../js/indexHtml-5ffd131e.js"></script><script type="text/javascript" src="../js/scss/bootstrap-64b0dbba.js"></script></body>
+</html>
