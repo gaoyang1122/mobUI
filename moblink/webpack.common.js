@@ -16,19 +16,17 @@ const markdown = require('./webpack.markdown.js');
 const marked = require("marked");
 const renderer = new marked.Renderer();
 marked.setOptions({
-    custom: [
-        {
-            key: 'demo', // 记号键名
-            mark: ':::', // 记号
-            render: function (oldStr, newStr) { // oldStr 原始字符串 newStr 处理后的字符串
-                return '<div>'+
-                    '<div class="code-example bd-example">' + oldStr + '</div>'+
-                    '<div class="code-content">' + newStr + '</div>'+
-                    '<div class="code-control">显示代码</div>'+
-                    '</div>'
-            }
+    custom: {
+        key: 'demo', // 记号键名
+        mark: ':::', // 记号
+        render: function (oldStr, newStr) { // oldStr 原始字符串 newStr 处理后的字符串
+            return '<div>'+
+                '<div class="code-example bd-example">' + oldStr + '</div>'+
+                '<div class="code-content">' + newStr + '</div>'+
+                '<div class="code-control">显示代码</div>'+
+                '</div>'
         }
-    ],
+    },
     highlight: function (code,lang) {
         return require('highlight.js').highlightAuto(code,[lang]).value;
     }
@@ -261,7 +259,11 @@ var plugins = [
     new copyWebpackPlugin([{
         from: path.join(__dirname, '../moblink/moblink.md'),
         to: path.join(__dirname, '../dist/docs'),
-    }])
+    }]),
+    new copyWebpackPlugin([{
+        from: path.join(__dirname, '../moblink/moblink-pro.md'),
+        to: path.join(__dirname, '../dist/docs'),
+    }]),
 
 ];
 

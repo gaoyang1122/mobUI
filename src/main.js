@@ -33,11 +33,11 @@ import buttons from './docs/components/buttons.md'
 import forms from './docs/components/forms.md'
 import tables from './docs/components/tables.md'
 
-
 const app = document.getElementById('app');
 const handfunc = (comp)=>{
     app.innerHTML = comp
 }
+
 const routeStting = [
     { path: '/', component: alerts },
     { path: '/alerts', component: alerts },

@@ -8,7 +8,9 @@ import '../src/js/common.js' //全局公共js
 /*
 * highlight theme
 * */
-import 'highlight.js/styles/color-brewer.css';
+// import 'highlight.js/styles/color-brewer.css';
+import 'highlight.js/styles/vs.css';
+// import 'highlight.js/styles/atom-one-dark.css';
 
 // import './scss/bootstrap.scss'
 // import './scss/bootstrap-grid.scss'
@@ -23,12 +25,17 @@ import '../src/css/style.scss'
 
 
 import moblink from './moblink.md'
+import moblink_pro from './moblink-pro.md'
 
 
 const app = document.getElementById('app');
+const app2 = document.getElementById('app2');
 const handfunc = (comp)=>{
     app.innerHTML = comp
 }
+app2.innerHTML = moblink_pro
+
+
 const routeStting = [
     { path: '/', component: moblink },
 ]
