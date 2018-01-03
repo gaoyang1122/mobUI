@@ -10,27 +10,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin'); // 创建html
 const ExtractTextPlugin = require("extract-text-webpack-plugin"); // 将css文件单独输出  new ExtractTextPlugin('style-[contenthash:8].css'),
 
 const copyWebpackPlugin = require('copy-webpack-plugin'); // 拷贝文件
-const markdown = require('./webpack.markdown.js');
 
-// markdown-loader
-const marked = require("marked");
-const renderer = new marked.Renderer();
-marked.setOptions({
-    custom: {
-        key: 'demo', // 记号键名
-        mark: ':::', // 记号
-        render: function (oldStr, newStr) { // oldStr 原始字符串 newStr 处理后的字符串
-            return '<div>'+
-                '<div class="code-example bd-example">' + oldStr + '</div>'+
-                '<div class="code-content">' + newStr + '</div>'+
-                '<div class="code-control">显示代码</div>'+
-                '</div>'
-        }
-    },
-    highlight: function (code,lang) {
-        return require('highlight.js').highlightAuto(code,[lang]).value;
-    }
-});
+
 
 const currentTarget = process.env.npm_lifecycle_event; //检测NPM运行时 npm run 的值 (dev build dist)
 
@@ -133,13 +114,13 @@ var rules = [
             {
                 loader: "html-loader"
             },
-            {
-                loader: "markdown-loader",
-                options: {
-                    pedantic: true,
-                    renderer
-                }
-            },
+            // {
+            //     loader: "markdown-loader",
+            //     options: {
+            //         pedantic: true,
+            //         renderer
+            //     }
+            // },
             // {
             //     loader: "file-loader",
             //     options: {

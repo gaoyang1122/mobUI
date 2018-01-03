@@ -3,8 +3,8 @@ const prod = require('./webpack-setting/webpack.prod.js');
 
 
 // moblink 技术文档  -------------------- 不能共用一个webpack入口
-const dev_moblink = require('./moblink/webpack.dev.js');
-const prod_moblink = require('./moblink/webpack.prod.js');
+// const dev_moblink = require('./moblink/webpack.dev.js');
+// const prod_moblink = require('./moblink/webpack.prod.js');
 
 /*
 * webpck打包 输出路径

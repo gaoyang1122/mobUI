@@ -20,8 +20,26 @@ import './css/docs.css'
 import './css/base.css'
 import './css/style.scss'
 
-
-
+// markdown-loader
+// const marked = require("marked");
+import marked from "md-compile"
+import highlight from "highlight.js"
+marked.setOptions({
+    custom: {
+        key: 'demo', // 记号键名
+        mark: ':::', // 记号
+        render: function (oldStr, newStr) { // oldStr 原始字符串 newStr 处理后的字符串
+            return '<div>'+
+                '<div class="code-example">' + oldStr + '</div>'+
+                '<div class="code-content">' + newStr + '</div>'+
+                '<div class="code-control">显示代码</div>'+
+                '</div>'
+        }
+    },
+    highlight: function (code,lang) {
+        return highlight.highlightAuto(code,[lang]).value;
+    }
+});
 
 // import ssss from './examples/alerts.html'
 // import ssss from './docs/components/alerts.md'
@@ -35,7 +53,7 @@ import tables from './docs/components/tables.md'
 
 const app = document.getElementById('app');
 const handfunc = (comp)=>{
-    app.innerHTML = comp
+    app.innerHTML = marked(comp)
 }
 
 const routeStting = [

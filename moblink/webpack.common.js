@@ -13,7 +13,8 @@ const copyWebpackPlugin = require('copy-webpack-plugin'); // 拷贝文件
 const markdown = require('./webpack.markdown.js');
 
 // markdown-loader
-const marked = require("marked");
+// const marked = require("marked");
+const marked = require("md-compile");
 const renderer = new marked.Renderer();
 marked.setOptions({
     custom: {
@@ -21,7 +22,7 @@ marked.setOptions({
         mark: ':::', // 记号
         render: function (oldStr, newStr) { // oldStr 原始字符串 newStr 处理后的字符串
             return '<div>'+
-                '<div class="code-example bd-example">' + oldStr + '</div>'+
+                '<div class="code-example">' + oldStr + '</div>'+
                 '<div class="code-content">' + newStr + '</div>'+
                 '<div class="code-control">显示代码</div>'+
                 '</div>'
